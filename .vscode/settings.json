@@ -1,0 +1,28 @@
+{
+    "workbench.colorTheme": "Learn with Sumit - Shades of Grey",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "php.validate.executablePath": "c:/php/php.exe"
+    },
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "bracketPairColorizer.depreciation-notice": false,
+    "emmet.triggerExpansionOnTab": true,
+    "blade.format.enable": true,
+    "[blade]": {
+        "editor.autoClosingBrackets": "always"
+    },
+    "cSpell.ignoreWords": [
+        "Niloy"
+    ],
+    "window.zoomLevel": 1,
+}
