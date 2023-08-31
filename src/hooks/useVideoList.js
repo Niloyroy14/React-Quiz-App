@@ -1,4 +1,4 @@
-import { getDatabase,ref,query, orderByKey, get, startAt, limitToFirst } from "firebase/database";
+import { getDatabase, ref, query, orderByKey, get, startAt, limitToFirst } from "firebase/database";
 import { useEffect, useState } from "react";
 
 export default function useVideoList(page) {
@@ -16,7 +16,7 @@ export default function useVideoList(page) {
             const videoQuery = query(
                 videosRef,
                 orderByKey(),
-                startAt("" + page),
+                startAt("" + page), //convert page number to string  
                 limitToFirst(8)
             );
 
@@ -37,7 +37,7 @@ export default function useVideoList(page) {
             } catch (err) {
                 setLoading(false);
                 setError(true);
-               
+
                 console.log(err);
             }
         }

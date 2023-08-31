@@ -17,14 +17,14 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          
+
           <Route path="/*" element={<PubliceRoute />}>
             <Route path="signup" element={<Signup />} />
             <Route path="login" element={<Login />} />
           </Route>
 
           <Route path="/*" element={<PrivateRoute />}>
-            <Route path="quiz" element={<Quiz />} />
+            <Route path="quiz/:id" element={<Quiz />} />
             <Route path="result" element={<Result />} />
           </Route>
 
